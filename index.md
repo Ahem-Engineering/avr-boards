@@ -1,3 +1,4 @@
+```html
 <html>
   <head>
   </head>
@@ -5,3 +6,4 @@
     Hello World!
   </body>
 </html>
+```
