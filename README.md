@@ -1,5 +1,5 @@
 # avr-boards
-Arduino IDE platform
+Arduino IDE platform Version 1
 
 ## Add to your Arduino IDE
 
