@@ -1,0 +1,150 @@
+#
+# Ahem Engineering AVR Arduino Configuration
+#
+# For more information see:
+# * https://arduino.github.io/arduino-cli/0.25/platform-specification/
+#
+# For boards go to:
+# * https://shop.ahem.net.au
+#
+
+# Uno Compatibles
+
+MCU00100.name=MCU00100 - Arduino Uno Compatible
+MCU00100.build.board=AVR_UNO
+MCU00100=MCU00100 - Freenove UNO R3
+
+MCU00100.upload.tool=arduino:avrdude
+MCU00100.upload.maximum_data_size=2048
+MCU00100.upload.protocol=arduino
+MCU00100.upload.maximum_size=32256
+MCU00100.upload.speed=115200
+
+MCU00100.bootloader.tool=arduino:avrdude
+MCU00100.bootloader.low_fuses=0xFF
+MCU00100.bootloader.unlock_bits=0x3F
+MCU00100.bootloader.lock_bits=0x0F
+MCU00100.bootloader.high_fuses=0xDE
+MCU00100.bootloader.extended_fuses=0xFD
+MCU00100.bootloader.file=atmega328p/optiboot/optiboot_atmega328.hex
+
+MCU00100.build.f_cpu=16000000L
+MCU00100.build.core=arduino:arduino
+MCU00100.variant=arduino:uno
+MCU00100.build.board=AVR_UNO
+MCU00100.build.mcu=atmega328p
+
+
+# Micro Compatibles
+## MCU00200
+
+MCU00200.name=MCU00200 - Arduino Micro Compatible
+MCU00200.build.board=AVR_MICRO
+
+MCU00200.vid.0=0x2341
+MCU00200.pid.0=0x0037
+MCU00200.vid.1=0x2341
+MCU00200.pid.1=0x8037
+MCU00200.vid.2=0x2A03
+MCU00200.pid.2=0x0037
+MCU00200.vid.3=0x2A03
+MCU00200.pid.3=0x8037
+MCU00200.vid.4=0x2341
+MCU00200.pid.4=0x0237
+MCU00200.vid.5=0x2341
+MCU00200.pid.5=0x8237
+MCU00200.upload_port.0.vid=0x2341
+MCU00200.upload_port.0.pid=0x0037
+MCU00200.upload_port.1.vid=0x2341
+MCU00200.upload_port.1.pid=0x8037
+MCU00200.upload_port.2.vid=0x2A03
+MCU00200.upload_port.2.pid=0x0037
+MCU00200.upload_port.3.vid=0x2A03
+MCU00200.upload_port.3.pid=0x8037
+MCU00200.upload_port.4.vid=0x2341
+MCU00200.upload_port.4.pid=0x0237
+MCU00200.upload_port.5.vid=0x2341
+MCU00200.upload_port.5.pid=0x8237
+MCU00200.upload_port.6.board=micro
+
+MCU00200.upload.tool=arduino:avrdude
+MCU00200.upload.tool.default=arduino:avrdude
+MCU00200.upload.tool.network=arduino:arduino_ota
+MCU00200.upload.protocol=avr109
+MCU00200.upload.maximum_size=28672
+MCU00200.upload.maximum_data_size=2560
+MCU00200.upload.speed=57600
+MCU00200.upload.disable_flushing=true
+MCU00200.upload.use_1200bps_touch=true
+MCU00200.upload.wait_for_upload_port=true
+
+MCU00200.bootloader.tool=arduino:avrdude
+MCU00200.bootloader.tool.default=arduino:avrdude
+MCU00200.bootloader.low_fuses=0xff
+MCU00200.bootloader.high_fuses=0xd8
+MCU00200.bootloader.extended_fuses=0xcb
+MCU00200.bootloader.file=atmega32u4/caterina/Caterina-MCU00200.hex
+MCU00200.bootloader.unlock_bits=0x3F
+MCU00200.bootloader.lock_bits=0x2F
+
+MCU00200.build.mcu=atmega32u4
+MCU00200.build.f_cpu=16000000L
+MCU00200.build.vid=0x2341
+MCU00200.build.pid=0x8037
+MCU00200.build.usb_product="Ahem Engineering Micro"
+MCU00200.build.board=AVR_MICRO
+MCU00200.build.core=arduino:arduino
+MCU00200.build.variant=arduino:micro
+MCU00200.build.extra_flags={build.usb_flags}
+
+
+# Arduino Nano Compatibles
+## MCU00300
+MCU00300.name=MCU00300 - Arduino Nano Compatible
+MCU00300.build.board=AVR_NANO
+
+MCU00300.upload.tool=arduino:avrdude
+MCU00300.upload.maximum_data_size=2048
+MCU00300.upload.protocol=arduino
+MCU00300.upload.maximum_size=30720
+MCU00300.upload.speed=115200
+
+MCU00300.bootloader.tool=arduino:avrdude
+MCU00300.bootloader.low_fuses=0xFF
+MCU00300.bootloader.unlock_bits=0x3F
+MCU00300.bootloader.lock_bits=0x0F
+MCU00300.bootloader.high_fuses=0xDA
+MCU00300.bootloader.extended_fuses=0xFD
+MCU00300.bootloader.file=atmega328p/optiboot/optiboot_atmega328.hex
+
+MCU00300.build.f_cpu=16000000L
+MCU00300.build.core=arduino:arduino
+MCU00300.variant=arduino:eightanaloginputs
+MCU00300.build.board=AVR_NANO
+MCU00300.build.mcu=atmega328p
+
+
+# Mega Compatibles
+## MCU00400
+MCU00400.name=MCU00400 - Keyestudio Mega Plus
+MCU00400.build.board=AVR_MEGA2560
+
+MCU00400.upload.tool=arduino:avrdude
+MCU00400.upload.maximum_data_size=8192
+MCU00400.upload.protocol=wiring
+MCU00400.upload.maximum_size=253952
+MCU00400.upload.speed=115200
+
+MCU00400.bootloader.tool=arduino:avrdude
+MCU00400.bootloader.low_fuses=0xFF
+MCU00400.bootloader.unlock_bits=0x3F
+MCU00400.bootloader.lock_bits=0x0F
+MCU00400.bootloader.high_fuses=0xD8
+MCU00400.bootloader.extended_fuses=0xFD
+MCU00400.bootloader.file=atmega2560/stk500v2/stk500boot_v2_mega2560.hex
+
+MCU00400.build.f_cpu=16000000L
+MCU00400.build.core=arduino:arduino
+MCU00400.build.variant=arduino:mega
+MCU00400.build.board=AVR_MEGA2560
+MCU00400.build.mcu=atmega2560
