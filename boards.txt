@@ -83,7 +83,7 @@ MCU00200.bootloader.tool.default=arduino:avrdude
 MCU00200.bootloader.low_fuses=0xff
 MCU00200.bootloader.high_fuses=0xd8
 MCU00200.bootloader.extended_fuses=0xcb
-MCU00200.bootloader.file=atmega32u4/caterina/Caterina-MCU00200.hex
+MCU00200.bootloader.file=atmega32u4/caterina/Caterina-Micro.hex
 MCU00200.bootloader.unlock_bits=0x3F
 MCU00200.bootloader.lock_bits=0x2F
 
