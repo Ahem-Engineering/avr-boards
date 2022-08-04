@@ -16,7 +16,7 @@ You have now installed the Ahem Engineering Arduino IDE Boards profile. Before y
 ## Version
 Versions are numbered using [Semantic Versioning](https://www.semver.org)
 
-- First number indicates **Major** versions. This means there may be major changes to the board selection, library selection, introduction of new core types, etc. This may potentially break older Arduino sketches or require reviewing the board settings you have selected for your project.
+- First number indicates **Major** versions. This means there may be major changes to the board selection, library selection, introduction of new core types, etc. This may potentially break older Arduino sketches or require reviewing the board settings you have selected for your project. New major versions will be forked.
 - Second number indicates **Minor** versions. This means changes add functionality and may include additional examples or libraries, however none will be removed from previous minor versions. Items which will be removed from the next major release will be marked *deprecated* or similar.
 - Third number indicated **Patch** version. This means changes have been made to increase compatibility, fix broken inclusions, add optimisations or fix other small errors.
 
