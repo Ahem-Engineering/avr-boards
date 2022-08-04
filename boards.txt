@@ -30,7 +30,7 @@ MCU00100.bootloader.file=atmega328p/optiboot/optiboot_atmega328.hex
 
 MCU00100.build.f_cpu=16000000L
 MCU00100.build.core=arduino:arduino
-MCU00100.variant=arduino:uno
+MCU00100.build.variant=arduino:standard
 MCU00100.build.board=AVR_UNO
 MCU00100.build.mcu=atmega328p
 
@@ -119,7 +119,7 @@ MCU00300.bootloader.file=atmega328p/optiboot/optiboot_atmega328.hex
 
 MCU00300.build.f_cpu=16000000L
 MCU00300.build.core=arduino:arduino
-MCU00300.variant=arduino:eightanaloginputs
+MCU00300.build.variant=arduino:eightanaloginputs
 MCU00300.build.board=AVR_NANO
 MCU00300.build.mcu=atmega328p
 
